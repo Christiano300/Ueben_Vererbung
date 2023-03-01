@@ -1,0 +1,52 @@
+class Schule (extends) ______ {
+    ______ klassen;
+    ______ lehrer;
+    ______ direktor;
+
+    Schule(...) {
+
+    }
+}
+
+class Klasse (extends) ______ {
+    ______ schueler;
+    ______ klassenvorstand;
+    ______ klassensprecher;
+
+    Klasse(...) {
+
+    }
+}
+
+class Schueler (extends) ______ {
+    ______ klasse;
+    ______ nummer;
+
+    Schueler(...) {
+
+    }
+}
+
+class Lehrer (extends) ______ {
+    Lehrer(...) {
+
+    }
+}
+
+class Klassenvorstand (extends) ______ {
+    ______ klasse;
+
+    Klassenvorstand(...) {
+
+    }
+}
+
+class Person (extends) ______ {
+    ______ vorname;
+    ______ nachname;
+    ______ position;
+
+    Person(...) {
+
+    }
+}

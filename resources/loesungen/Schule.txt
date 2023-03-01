@@ -1,0 +1,61 @@
+class Schule {
+    Klasse[] klassen;
+    Lehrer[] lehrer;
+    Lehrer direktor;
+
+    Schule(Klasse[] klassen, Lehrer[] lehrer, Lehrer direktor) {
+        this.klassen = klassen;
+        this.lehrer = lehrer;
+        this.direktor = direktor;
+    }
+}
+
+class Klasse {
+    Schueler[] schueler;
+    Lehrer klassenvorstand;
+    Schueler klassensprecher;
+
+    Klasse(Schueler[] schueler, Lehrer klassenvorstand, Schueler klassensprecher) {
+        this.schueler = schueler;
+        this.klassenvorstand = klassenvorstand;
+        this.klassensprecher = klassensprecher;
+    }
+}
+
+class Schueler extends Person {
+    Klasse klasse;
+    int nummer;
+
+    Schueler(String vorname, String nachname, String position, Klasse klasse, int nummer) {
+        super(vorname, nachname, position);
+        this.klasse = klasse;
+        this.nummer = nummer;
+    }
+}
+
+class Lehrer extends Person {
+    Lehrer(String vorname, String nachname, String position) {
+        super(vorname, nachname, position);
+    }
+}
+
+class Klassenvorstand extends Lehrer {
+    Klasse klasse;
+
+    Klassenvorstand(String vorname, String nachname, String position, Klasse klasse) {
+        super(vorname, nachname, position);
+        this.klasse = klasse;
+    }
+}
+
+class Person {
+    String vorname;
+    String nachname;
+    String position;
+
+    Person(String vorname, String nachname, String position) {
+        this.vorname = vorname;
+        this.nachname = nachname;
+        this.position = position;
+    }
+}
