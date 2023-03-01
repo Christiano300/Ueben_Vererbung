@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Compare {
 	public static void main(String[] args) throws IOException {
 		File file = new File("resources/loesungen");
-		if (file.exists() && file.isDirectory()) {
+		if (file.exists() && file.isDirectory()) { //Schass
 			for (File i : Objects.requireNonNull(file.listFiles())) {
 				String aufgabe = Files.readString(Path.of(i.getPath()));
 				String loesung = Files.readString(Path.of("resources/loesungen/" + i.getName()));
